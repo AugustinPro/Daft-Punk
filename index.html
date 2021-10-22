@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Album de Daft Punk</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/brands.min.css" integrity="sha512-lCU0XyQA8yobR7ychVxEOU5rcxs0+aYh/9gNDLaybsgW9hdrtqczjfKVNIS5doY0Y5627/+3UVuoGv7p8QsUFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/brands.min.css"
+        integrity="sha512-lCU0XyQA8yobR7ychVxEOU5rcxs0+aYh/9gNDLaybsgW9hdrtqczjfKVNIS5doY0Y5627/+3UVuoGv7p8QsUFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script async src="assets/js/script.js"></script>
 </head>
+
 <body>
     <header class="site-header">
         <div class="retour-arriere">fleche</div>
@@ -18,7 +25,9 @@
         <div class="album-content">
             <div class="album-wrapper">
                 <figure class="photo-album">
-                    <img class="img-adaptative" src="./assets/img/http___images.music-story.com_img_album_D_daft-punk-random-access-memories.jpg" alt="photo-album">
+                    <img class="img-adaptative"
+                        src="./assets/img/http___images.music-story.com_img_album_D_daft-punk-random-access-memories.jpg"
+                        alt="photo-album">
                 </figure>
                 <h1>Random Acces Memories</h1>
                 <p class="titre-album">Daft Punk</p>
@@ -28,49 +37,60 @@
         <div class="tracklist">
             <div class="tracklist-wrapper">
                 <div class="flex-item first song">
-                    <div class="title-song1">1. Hello My Friend</div>
+                    <div class="title-song1"><span class="track1" onclick="songSwapper(this)">1. Hello My
+                            Friend</span></div>
                     <div class="time-song1">01.02</div>
                 </div>
                 <div class="flex-item 2nd song">
-                    <div class="title-song2">2. Romantic Climate</div>
+                    <div class="title-song2"><span class="track2" onclick="songSwapper(this)">2. Romantic
+                            Climate</span></div>
                     <div class="time-song2">01.15</div>
                 </div>
                 <div class="flex-item 3rd song">
-                    <div class="title-song3">3. Fresh Air</div>
+                    <div class="title-song3"><span class="track3" onclick="songSwapper(this)">3. Fresh Air</span>
+                    </div>
                     <div class="time-song3">01.18</div>
                 </div>
                 <div class="flex-item 4th song">
-                    <div class="title-song4">4. Kids Toys</div>
+                    <div class="title-song4"><span class="track4" onclick="songSwapper(this)">4. Kids Toys</span>
+                    </div>
                     <div class="time-song4">01.19</div>
                 </div>
             </div>
         </div>
         <div class="lecture">
             <div class="lecture-wrapper">
-              <div class="lecture-item item1">1</div>
-              <div class="lecture-item item2">2</div>
-              <div class="lecture-item item3">
-                  <div class="lecture-button button1">1</div>
-                  <div class="lecture-button button2">2</div>
-                  <div class="lecture-button button3">3</div>
-                  <div class="lecture-button button4">4</div>
-                  <div class="lecture-button button5">5</div>
-              </div>
-        </div>
-        <footer class="menu">
-            <div class="menu-wrapper">
-              <div class="menu-item item4"><a href="#"></a>1</div>
-              <div class="menu-item item5"><a href="#"></a>2</div>
-              <div class="menu-item item6"><a href="#"></a>3</div>
-              <div class="menu-item item7"><a href="#"></a>4</div>
-              <div class="menu-item item8"><a href="#"></a>5</div>
-              <div class="menu-item item9"><a href="#"></a>6</div>
-              <div class="menu-item item10"><a href="#"></a>7</div>
-              <div class="menu-item item11"><a href="#"></a>8</div>
-              <div class="menu-item item12"><a href="#"></a>9</div>
+                <div class="lecture-item item1">1</div>
+                <div class="lecture-item item2">2</div>
+                <div class="lecture-item item3">
+                    <div class="lecture-button button1">1</div>
+                    <div class="lecture-button button2">
+                        <span id="playSong">Play</span>
+                        <br><br>
+                        <audio id="currentSong" width="420">
+                            <source id="songSwap" src="assets/music/track1.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="lecture-button button3">3</div>
+                    <div class="lecture-button button4">4</div>
+                    <div class="lecture-button button5">5</div>
+                </div>
             </div>
-        </footer>
+            <footer class="menu">
+                <div class="menu-wrapper">
+                    <div class="menu-item item4"><a href="#"></a>1</div>
+                    <div class="menu-item item5"><a href="#"></a>2</div>
+                    <div class="menu-item item6"><a href="#"></a>3</div>
+                    <div class="menu-item item7"><a href="#"></a>4</div>
+                    <div class="menu-item item8"><a href="#"></a>5</div>
+                    <div class="menu-item item9"><a href="#"></a>6</div>
+                    <div class="menu-item item10"><a href="#"></a>7</div>
+                    <div class="menu-item item11"><a href="#"></a>8</div>
+                    <div class="menu-item item12"><a href="#"></a>9</div>
+                </div>
+            </footer>
     </main>
-    <script src="https://kit.fontawesome.com/5a4c54cf2d.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

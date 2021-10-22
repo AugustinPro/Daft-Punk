@@ -1,4 +1,6 @@
-
+/*-----------------------------------------------------------------------------
+@@@Style Commun
+--------------------------------------------------------------------------------*/
 * {
     box-sizing: border-box;
 }
@@ -8,11 +10,12 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 1.5em;
+    background: #000;
 
 }
 
 /*-----------------------------------------------------------------------------
-HEADER
+@@@HEADER
 --------------------------------------------------------------------------------*/
 .site-header{
     max-width: 600px;
@@ -27,30 +30,28 @@ HEADER
 
 .retour-arriere{
     width: 65px;
-    height: 65px;
+    height: auto;
     /* background-color: cadetblue; */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     color: white;
 }
 
 .menu-burger{
     width: 65px;
-    height: 65px;
+    height: auto;
    /*  background-color: coral; */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     color: white;
 }
-
-/*------------------------------------------------------------------------------
-ALBUM CONTENT
-------------------------------------------------------------------------------*/
-
+/*-----------------------------------------------------------------------------
+@@@Affiche de l'album
+--------------------------------------------------------------------------------*/
 .site-content{
     max-width: 600px;
     width: 100%;
@@ -67,7 +68,7 @@ ALBUM CONTENT
     width: 230px;
     height: 230px;
     margin: auto;
-    padding: 0 0 20px 0;
+    padding: 10px 0 20px 0;
 }
 
 .photo-album img{
@@ -94,14 +95,9 @@ ALBUM CONTENT
     padding: 0 0 10px 20px;
     color: rgba(255, 255, 255, 0.6)
 }
-
-/*------------------------------------------------------------------
-FIN ALBUM CONTENT
----------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------------------
-partie maxime
---------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------
+@@@Piste De Lecture
+--------------------------------------------------------------------------------*/
 
 .lecture {
     display: flex;
@@ -144,6 +140,9 @@ partie maxime
     justify-content: space-around;
     align-items: center;
 }
+/*-----------------------------------------------------------------------------
+@@@Menu De Nav
+--------------------------------------------------------------------------------*/
 .menu-wrapper {
     width: 100%;
     max-width: 600px;

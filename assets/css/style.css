@@ -1,3 +1,4 @@
+
 /*--------------------------------------------------------------------------
 partie maxime
 --------------------------------------------------------------------------*/
@@ -56,4 +57,24 @@ partie maxime
 }
 .menu-item {
     color: white;
+}
+.tracklist {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+}
+.tracklist-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.flex-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    color: white;
+    border-top: 1px solid white;
 }

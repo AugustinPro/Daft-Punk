@@ -27,20 +27,23 @@ HEADER
 .retour-arriere{
     width: 65px;
     height: 65px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+    color: white;
 }
 
 .menu-burger{
     width: 65px;
     height: 65px;
-    background-color: coral;
+   /*  background-color: coral; */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    color: white;
 }
 
 /*------------------------------------------------------------------------------
@@ -51,7 +54,7 @@ ALBUM CONTENT
     max-width: 600px;
     width: 100%;
     margin: auto;
-    background: linear-gradient(orange, black);
+    background: linear-gradient(black, black, grey);
 }
 
 .img-adaptative{
@@ -60,10 +63,14 @@ ALBUM CONTENT
 }
 
 .photo-album{
-    width: 300px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     margin: auto;
-    padding: 20px;
+    padding: 0 0 20px 0;
+}
+
+.photo-album img{
+    box-shadow: 0 7px 7px black;
 }
 
 .site-content h1{
@@ -76,6 +83,17 @@ ALBUM CONTENT
 .site-content .titre-album{
     font-size: 13px;
     font-weight: 800;
-    padding: 0 0 10px 20px;
+    padding: 0 0 5px 20px;
     color: white;
 }
+
+.site-content .annee{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 0 10px 20px;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+/*------------------------------------------------------------------
+FIN ALBUM CONTENT
+---------------------------------------------------------------------*/

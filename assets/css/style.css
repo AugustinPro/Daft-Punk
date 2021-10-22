@@ -15,5 +15,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 5px;
+    color: white;
     border-top: 1px solid white;
 }
